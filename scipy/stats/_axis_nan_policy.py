@@ -366,9 +366,9 @@ def _axis_nan_policy_factory(tuple_to_result, default_axis=0,
         Function that unpacks the results of the function being wrapped into
         a tuple. This is essentially the inverse of `tuple_to_result`. Default
         is `None`, which is appropriate for statistical tests that return a
-        statistic, pvalue tuple (rather than, e.g., a non-iterable datalass).
+        statistic, pvalue tuple (rather than, e.g., a non-iterable dataclass).
     too_small : int or callable, default: 0
-        The largest unnacceptably small sample for the function being wrapped.
+        The largest unacceptably small sample for the function being wrapped.
         For example, some functions require samples of size two or more or they
         raise an error. This argument prevents the error from being raised when
         input is not 1D and instead places a NaN in the corresponding element
