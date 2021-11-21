@@ -142,7 +142,7 @@ def get_results(params, Z, n_jobs=1, compute_mp=True):
     Parameters
     ----------
     params : iterable
-        iterable of tuples of floats (a, b, c) specificying parameter values
+        iterable of tuples of floats (a, b, c) specifying parameter values
         a, b, c for hyp2f1
     Z : iterable of complex
         Arguments at which to evaluate hyp2f1
