@@ -36,7 +36,7 @@ def series_small_a():
         # set the whole bracket involving polygammas to 1
         x_part = (term.subs(polygamma(0, b), 1)
                   .replace(polygamma, lambda *args: 0))
-        # sign convetion: x part always positive
+        # sign convention: x part always positive
         x_part *= (-1)**n
 
         A.append(a**n/factorial(n))
@@ -99,7 +99,7 @@ def series_small_a_small_b():
         # set the whole bracket involving polygammas to 1
         x_part = (term.subs(polygamma(0, b), 1)
                   .replace(polygamma, lambda *args: 0))
-        # sign convetion: x part always positive
+        # sign convention: x part always positive
         x_part *= (-1)**n
         # expansion of polygamma part with 1/gamma(b)
         pg_part = term/x_part/gamma(b)
@@ -144,7 +144,7 @@ def series_small_a_small_b():
 
     # Does B have the assumed structure?
     s += "\n\nTest if B[i] does have the assumed structure."
-    s += "\nC[i] are derived from B[1] allone."
+    s += "\nC[i] are derived from B[1] alone."
     s += "\nTest B[2] == C[1] + b*C[2] + b^2/2*C[3] + b^3/6*C[4] + .."
     test = sum([b**k/factorial(k) * C[k+1] for k in range(order-1)])
     test = (test - B[2].subs(c_subs)).simplify()

@@ -78,10 +78,10 @@ all fields of science and technology. The values became available on 20 May
 # ---------------------------------------------------- --------------------- -------------------- -------------
 txt2002 = """\
 Wien displacement law constant                         2.897 7685e-3         0.000 0051e-3         m K
-atomic unit of 1st hyperpolarizablity                  3.206 361 51e-53      0.000 000 28e-53      C^3 m^3 J^-2
-atomic unit of 2nd hyperpolarizablity                  6.235 3808e-65        0.000 0011e-65        C^4 m^4 J^-3
+atomic unit of 1st hyperpolarizability                 3.206 361 51e-53      0.000 000 28e-53      C^3 m^3 J^-2
+atomic unit of 2nd hyperpolarizability                 6.235 3808e-65        0.000 0011e-65        C^4 m^4 J^-3
 atomic unit of electric dipole moment                  8.478 353 09e-30      0.000 000 73e-30      C m
-atomic unit of electric polarizablity                  1.648 777 274e-41     0.000 000 016e-41     C^2 m^2 J^-1
+atomic unit of electric polarizability                 1.648 777 274e-41     0.000 000 016e-41     C^2 m^2 J^-1
 atomic unit of electric quadrupole moment              4.486 551 24e-40      0.000 000 39e-40      C m^2
 atomic unit of magn. dipole moment                     1.854 801 90e-23      0.000 000 16e-23      J T^-1
 atomic unit of magn. flux density                      2.350 517 42e5        0.000 000 20e5        T
