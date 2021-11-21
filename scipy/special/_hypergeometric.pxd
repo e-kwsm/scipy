@@ -46,7 +46,7 @@ cdef inline double hyp1f1(double a, double b, double x) nogil:
     if b <= 0 and b == floor(b):
         # There is potentially a pole.
         if b <= a < 0 and a == floor(a):
-            # The Pochammer symbol (a)_n cancels the pole.
+            # The Pochhammer symbol (a)_n cancels the pole.
             return hyp1f1_series_track_convergence(a, b, x)
         return NPY_INFINITY
     elif a == 0 or x == 0:
@@ -86,7 +86,7 @@ cdef inline double hyp1f1_series_track_convergence(
     double b,
     double x
 ) nogil:
-    # The hypergeometric series can suffer from cancelation or take a
+    # The hypergeometric series can suffer from cancellation or take a
     # prohibitive number of terms to converge. This function computes
     # the series while monitoring those conditions.
     cdef int k
@@ -100,7 +100,7 @@ cdef inline double hyp1f1_series_track_convergence(
         if bpk != 0:
             term *= apk * x / bpk / (k + 1)
         elif apk == 0:
-            # The Pochammer symbol in the denominator has become zero,
+            # The Pochhammer symbol in the denominator has become zero,
             # but we still have the continuation formula DLMF 13.2.5.
             term = 0
         else:

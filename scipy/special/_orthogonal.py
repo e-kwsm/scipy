@@ -1835,7 +1835,7 @@ def chebyu(n, monic=False):
     be obtained as the determinant of specific :math:`n \times n`
     matrices. As an example we can check how the points obtained from
     the determinant of the following :math:`3 \times 3` matrix
-    lay exacty on :math:`U_3`:
+    lay exactly on :math:`U_3`:
 
     >>> import matplotlib.pyplot as plt
     >>> from scipy.linalg import det
