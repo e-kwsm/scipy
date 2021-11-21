@@ -154,7 +154,7 @@ def shgo(func, bounds, args=(), constraints=None, n=None, iters=1,
             with the objective function. If False, the gradient will be
             estimated numerically. ``jac`` can also be a callable returning the
             gradient of the objective. In this case, it must accept the same
-            arguments as ``fun``. (Passed to `scipy.optimize.minmize` automatically)
+            arguments as ``fun``. (Passed to `scipy.optimize.minimize` automatically)
 
         * hess, hessp : callable, optional
             Hessian (matrix of second-order derivatives) of objective function
@@ -164,7 +164,7 @@ def shgo(func, bounds, args=(), constraints=None, n=None, iters=1,
             ``hessp`` will be ignored. If neither ``hess`` nor ``hessp`` is
             provided, then the Hessian product will be approximated using
             finite differences on ``jac``. ``hessp`` must compute the Hessian
-            times an arbitrary vector. (Passed to `scipy.optimize.minmize`
+            times an arbitrary vector. (Passed to `scipy.optimize.minimize`
             automatically)
 
         Algorithm settings:
@@ -708,7 +708,7 @@ class SHGO:
         self.symmetry = 'symmetry' in options
 
         # Algorithm functionality
-        # Only evaluate a few of the best candiates
+        # Only evaluate a few of the best candidates
         self.local_iter = options.get('local_iter', False)
 
         self.infty_cons_sampl = options.get('infty_constraints', True)
@@ -973,7 +973,7 @@ class SHGO:
         Parameters
         ----------
         force_iter : int
-                     Number of starting minimizers to process (can be sepcified
+                     Number of starting minimizers to process (can be specified
                      globally or locally)
 
         """
