@@ -110,7 +110,7 @@ def evaluate_spline(const double[::1] t,
     nu : int
         Order of derivative to evaluate.
     extrapolate : int, optional
-        Whether to extrapolate to ouf-of-bounds points, or to return NaNs.
+        Whether to extrapolate to out-of-bounds points, or to return NaNs.
     out : ndarray, shape (s, m)
         Computed values of the spline at each of the input points.
         This argument is modified in-place.
