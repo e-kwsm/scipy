@@ -118,7 +118,7 @@ double faddeeva_log_ndtr(double x)
  * Log of the normal CDF for complex arguments.
  *
  * This is equivalent to log(ndtr(z)), but is more robust to overflow at $z\to\infty$.
- * This implementation uses the Faddeva computation, $\erfc(z) = \exp(-z^2) w(iz)$,
+ * This implementation uses the Faddeeva computation, $\erfc(z) = \exp(-z^2) w(iz)$,
  * taking special care to select the principal branch of the log function
  *           log( exp(-z^2) w(i z) )
  */
